@@ -3,18 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* reset */
+
+body {
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: "Whitney";
+    src:
+        url("../whitney-font/whitney.ttf"),
+        url("../whitney-font/whitney-bold.otf") format("opentype"),
+        url("../whitney-font/whitney-medium.otf") format("woff");
+}
 
 
 /* i container hanno una dimensione fissa,  centrati orizzontalmente */
+
 .container {
-    border: dashed 2px black;
     /* test */
 
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .container-small {
@@ -28,7 +41,8 @@
 }
 
 
-header, section {
+header,
+section {
     padding: 40px 20px;
 }
 
@@ -42,24 +56,21 @@ header, section {
 
 /* sezione navbar */
 nav {
-    background-color: #add8e6;
+    background-color: #3161e0;
     /* test */
-    padding: 10px ;
+    padding: 10px;
 }
 
-nav .container > * {
-    border: dashed 2px black;
-    /* test */
+nav .container>* {
 
     padding: 10px;
 }
 
 nav .container {
-    background-color: #daa520;
-    /* test */
 
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 nav .logo {
@@ -70,6 +81,7 @@ nav .logo {
 nav .nav-links {
     flex-grow: 1;
 }
+
 nav .nav-links ul {
     display: flex;
     justify-content: center;
@@ -77,11 +89,28 @@ nav .nav-links ul {
     gap: 12px;
 }
 
+nav .nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
 
 nav .login {
     width: 100px;
     text-align: right;
 }
+
+nav .login button {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+}
+
 /* fine sezione navbar */
 
 
@@ -132,6 +161,7 @@ nav .login {
     height: 600px;
     /* test */
 }
+
 /* fine sezioni grigie */
 
 
@@ -145,7 +175,7 @@ footer {
 }
 
 
-footer .container > * {
+footer .container>* {
     border: dashed 2px white;
     /* test */
 }
@@ -165,7 +195,7 @@ footer #footer-top .footer-links {
 footer #footer-top .footer-column {
     background-color: #20b2aa;
     /* test */
-    
+
     flex-grow: 1;
 }
 
@@ -182,7 +212,7 @@ footer #footer-bottom {
     padding: 16px 0;
 }
 
-footer #footer-bottom > * {
+footer #footer-bottom>* {
     background-color: #ffb6c1;
     /* test */
 
