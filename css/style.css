@@ -201,7 +201,6 @@ nav .login button {
 
 
 .big-content {
-    /* test */
 
     display: flex;
     flex-direction: column;
@@ -240,6 +239,20 @@ nav .login button {
 
 /* fine sezioni grigie */
 
+.wave-form {
+    height: 80px;
+    width: 100%;
+    filter: invert(100%) sepia(30%) saturate(225%) hue-rotate(241deg) brightness(113%) contrast(93%);
+    display: block;
+}
+
+.wave-form2 {
+    height: 80px;
+    width: 100%;
+    filter: invert(100%) sepia(30%) saturate(225%) hue-rotate(241deg) brightness(113%) contrast(93%);
+    display: block;
+    transform: scaleY(-1)
+}
 
 /* sezione footer */
 
@@ -251,33 +264,24 @@ footer {
 }
 
 
-footer .container>* {
-    border: dashed 2px white;
-    /* test */
-}
+footer .container>* {}
 
 
 footer #footer-top {
     margin-bottom: 30px;
+    border-bottom: 2px solid #2c3340;
 }
 
 footer #footer-top .footer-links {
-    background-color: #f08080;
-    height: 500px;
+    height: 400px;
     width: 250px;
-    /* test */
 }
 
 footer #footer-top .footer-column {
-    background-color: #20b2aa;
-    /* test */
-
     flex-grow: 1;
 }
 
 footer #footer-bottom {
-    background-color: #7fffd4;
-    /* test */
 
     margin-top: 16px;
 }
@@ -289,10 +293,61 @@ footer #footer-bottom {
 }
 
 footer #footer-bottom>* {
-    background-color: #ffb6c1;
-    /* test */
+
 
     padding: 4px 8px;
+}
+
+.flag-language {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.ita-language {
+    width: 20px;
+    height: 13px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+#footer-top .footer-links h3 {
+    padding-top: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #7289da;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column h4 {
+    padding-top: 50px;
+    font-size: 14px;
+    color: #7289db;
+}
+
+.footer-column ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-column ul>li {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* fine sezione footer */
