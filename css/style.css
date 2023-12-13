@@ -13,13 +13,15 @@ body {
 @font-face {
     font-family: "Whitney";
     src:
-        url("../whitney-font/whitney.ttf"),
-        url("../whitney-font/whitney-bold.otf") format("opentype"),
-        url("../whitney-font/whitney-medium.otf") format("woff");
+        url("../whitney-font/whitney-light.otf"),
 }
 
 
 /* i container hanno una dimensione fissa,  centrati orizzontalmente */
+
+body {
+    font-family: "Whitney", sans-serif;
+}
 
 .container {
     /* test */
@@ -218,14 +220,17 @@ nav .login button {
     margin-bottom: 35px;
 }
 
-.star-effect {
-    background-image: url(../img/stars.svg);
-    background-size: cover;
-}
-
 .star-effect h3 {
     text-align: center;
     margin-bottom: 35px;
+
+    background-image: url(../img/stars.svg);
+    background-position: center;
+    background-size: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding: 15px 30px;
 }
 
 .container .big-content button {
