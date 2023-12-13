@@ -315,6 +315,10 @@ footer #footer-bottom>* {
     font-size: 18px;
 }
 
+.social-icons>* {
+    margin-right: 20px;
+}
+
 #footer-top .footer-links h3 {
     padding-top: 50px;
     font-size: 30px;
@@ -347,6 +351,15 @@ footer #footer-bottom>* {
 .footer-column ul>li {
     color: white;
     font-size: 14px;
+    font-weight: bold;
+}
+
+.button button {
+    background-color: #8ea1e1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    color: white;
     font-weight: bold;
 }
 
